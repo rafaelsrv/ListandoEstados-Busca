@@ -18,8 +18,11 @@ input = input.toLowerCase()
 console.log(input)
 let x = document.getElementsByClassName('animal')
 
+
+
+
 for (i = 0; i < x.length; i++) { 
-    if (x[i].innerHTML.toLowerCase().includes(input)) {
+    if (!x[i].innerHTML.toLowerCase().includes(input)) {
         x[i].style.display="none";
     }
     else {
